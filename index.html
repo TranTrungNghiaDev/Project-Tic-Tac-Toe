@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
     <title>Tic Tac Toe</title>
 </head>
+
 <body>
-    
+    <h1>My Tic Tac Toe Game</h1>
+    <div id="gameBoard-container">
+        <section>
+            <button id="0" class="gameBoard-btn"></button>
+            <button id="1" class="gameBoard-btn"></button>
+            <button id="2" class="gameBoard-btn"></button>
+        </section>
+        <section>
+            <button id="3" class="gameBoard-btn"></button>
+            <button id="4" class="gameBoard-btn"></button>
+            <button id="5" class="gameBoard-btn"></button>
+        </section>
+        <section>
+            <button id="6" class="gameBoard-btn"></button>
+            <button id="7" class="gameBoard-btn"></button>
+            <button id="8" class="gameBoard-btn"></button>
+        </section>
+        <section>
+            <dialog id="dialog">
+                <form action="" method="dialog">
+                    <p>
+                        <label for="first-player">First player name: </label>
+                        <input type="text" 
+                        id="first-player" 
+                        placeholder="You will be X and go first"
+                        required
+                        >
+                    </p>
+                    <p>
+                        <label for="second-player">Second player name: </label>
+                        <input type="text"
+                         id="second-player" 
+                         placeholder="You will be O"
+                         required>
+                    </p>
+                    <button id="submit">Submit</button>
+                </form>
+            </dialog>
+            <button id="gameBegin">START / RESET</button>
+        </section>
+    </div>
+
 </body>
+
 </html>
